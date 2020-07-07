@@ -14,7 +14,7 @@ before_install:
   - gcloud config set project learn-k8s-282606 
   - gcloud config set compute/zone europe-west1-c
   - gcloud container clusters get-credentials cluster-1
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "1cc8d0aa-3496-4703-9a2d-6f8a49c4f006" | docker login -u "shaharbm" --password-stdin
   - docker build -t stephengrider/react-test -f ./client/Dockerfile.dev ./client
 
 script:
